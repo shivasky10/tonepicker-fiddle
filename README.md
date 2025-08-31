@@ -23,6 +23,15 @@ A modern web application that allows users to adjust the tone of their text usin
 - **Error Handling**: Comprehensive error handling for network and API issues
 - **Security**: Rate limiting, input validation, and secure API key management
 
+  
+**Project Screenshot** <img width="1156" height="683" alt="Screenshot 2025-08-31 211914" src="https://github.com/user-attachments/assets/28d16600-40d0-4ece-9887-6b1a6fa65eca" />
+
+**Live demo:** https://tonepicker-fiddle-frontend.onrender.com/ — (Hosted on Render free tier; may take a few seconds to wake).
+
+
+
+
+
 ## Quick Start
 
 ### Prerequisites
