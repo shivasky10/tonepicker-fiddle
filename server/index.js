@@ -206,10 +206,8 @@ app.use('*', (req, res) => {
   res.status(404).json({ error: 'Endpoint not found' });
 });
 
-app.listen(PORT, '127.0.0.1', () => {
-  console.log(`Server running on http://127.0.0.1:${PORT}`);
-  console.log(`Health check: http://127.0.0.1:${PORT}/api/health`);
-  if (useMockResponse) {
-    console.log('⚠️  WARNING: Using mock responses. Set a valid MISTRAL_API_KEY in .env for real AI-powered tone adjustment.');
-  }
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
+
