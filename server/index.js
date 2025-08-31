@@ -24,12 +24,20 @@ const limiter = rateLimit({
 });
 app.use('/api/', limiter);
 
+// app.use(cors({
+//   origin: process.env.NODE_ENV === 'production' 
+//     ? ['https://yourdomain.com'] 
+//     : ['http://localhost:3000'],
+//   credentials: true
+// }));
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? ['https://yourdomain.com'] 
-    : ['http://localhost:3000'],
+  origin: [
+    "http://localhost:3000",
+    "https://tonepicker-fiddle-frontend.onrender.com"
+  ],
   credentials: true
 }));
+
 
 app.use(express.json({ limit: '10mb' }));
 
